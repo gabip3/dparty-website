@@ -578,7 +578,7 @@ body.is-locked{ overflow:hidden; }
 .footer__desc{ max-width:34ch; font-size:.95rem; }
 .footer__col h3{ color:#fff; font-family:var(--font-sans); font-size:.85rem; letter-spacing:.14em;
   text-transform:uppercase; margin-bottom:1rem; font-weight:700; }
-.footer__col a{ display:block; padding:.35rem 0; color:rgba(255,255,255,.82); font-size:.96rem;
+.footer__col a{ display:flex; align-items:center; min-height:44px; padding:.35rem 0; color:rgba(255,255,255,.82); font-size:.96rem;
   transition:color .2s ease; }
 .footer__col a:hover{ color:var(--blush); }
 .footer__area{ margin-top:1rem; font-size:.88rem; color:rgba(255,255,255,.6); }
