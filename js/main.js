@@ -263,29 +263,32 @@
       var btn = $('button[type="submit"]', form);
       btn.setAttribute('aria-busy', 'true');
 
-      /* Submits to Netlify Forms (the form has data-netlify="true" plus a
-         hidden form-name field — see index.html). Netlify only processes
-         this endpoint once the site is deployed on Netlify; posting from a
-         plain local server (e.g. http-server) will 404, which is expected
-         during local development. */
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encodeForNetlify(form)
-      }).then(function (r) {
+      // Honeypot: bots fill every field, real visitors never see this one.
+      // Quietly drop the submission without sending anything.
+      var honeypot = form.querySelector('[name="bot-field"]');
+      if (honeypot && honeypot.value) {
         btn.removeAttribute('aria-busy');
-        if (r.ok) showSuccess(); else showSubmitError();
-      }).catch(function () {
-        btn.removeAttribute('aria-busy');
-        showSubmitError();
-      });
-    });
-  }
+        showSuccess();
+        return;
+      }
 
-  function encodeForNetlify(form) {
-    var params = new URLSearchParams();
-    new FormData(form).forEach(function (value, key) { params.append(key, value); });
-    return params.toString();
+      /* Submits to Web3Forms (web3forms.com) — works on any static host
+         (GitHub Pages, Netlify, anywhere), no backend needed. Where the
+         email lands is controlled by the access_key hidden field on the
+         form itself, not here. */
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      }).then(function (r) { return r.json(); })
+        .then(function (data) {
+          btn.removeAttribute('aria-busy');
+          if (data.success) showSuccess(); else showSubmitError();
+        }).catch(function () {
+          btn.removeAttribute('aria-busy');
+          showSubmitError();
+        });
+    });
   }
 
   function showSuccess() {

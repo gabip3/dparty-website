@@ -4,27 +4,27 @@ A responsive, trilingual (EN / ES / PT) marketing site for **D'Party**, a desser
 event-treats business serving Atlanta, GA. Built with plain HTML, CSS and vanilla
 JavaScript — no build step, no frameworks.
 
-## Deploy to Netlify
+## Deploy
 
 This folder is ready to deploy as-is — no build step, no dependencies to install.
+It's host-agnostic (the form works the same everywhere via Web3Forms — see below),
+so any of these work:
 
-**Option A — drag & drop (fastest):**
+**Currently live on GitHub Pages:** https://gabip3.github.io/dparty-website/
+(repo: `gabip3/dparty-website`, deployed from the `master` branch root via
+Settings → Pages. Push to `master` and it redeploys automatically in ~1 minute.)
+
+**Netlify (drag & drop):**
 1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
 2. Drag this entire `Pudim` folder onto the page
 3. Done — Netlify gives you a live URL in seconds
+4. `netlify.toml` sets basic security headers and long-term caching for `/assets/*`
 
-**Option B — connect a Git repo (best for ongoing edits):**
-1. Push this folder to a GitHub/GitLab/Bitbucket repo
-2. In Netlify: **Add new site → Import an existing project** → pick the repo
-3. Build settings: leave the build command **empty** and publish directory as `.`
-   (already configured in `netlify.toml`, so Netlify should auto-detect this)
-
-**After deploying:**
-- The event inquiry form is already wired to **Netlify Forms** — no extra setup needed.
-  Submissions will appear under **Site settings → Forms** in your Netlify dashboard
-  (Netlify also emails you by default for each new submission; configurable there).
-- To use a real domain, add it under **Site settings → Domain management**.
-- `netlify.toml` sets basic security headers and long-term caching for `/assets/*`.
+**Netlify (connect a Git repo, best for ongoing edits):**
+1. In Netlify: **Add new site → Import an existing project** → pick the
+   `dparty-website` GitHub repo
+2. Build settings: leave the build command **empty** and publish directory as `.`
+   (already configured in `netlify.toml`)
 
 ## Languages
 
@@ -108,22 +108,23 @@ for example:
 
 Keep the descriptive `alt` text — it helps local SEO and accessibility.
 
-### The form (Netlify Forms — already wired)
+### The form (Web3Forms — already wired, works everywhere)
 
 The event inquiry form (`#inquiryForm`) validates in the browser and submits for real
-via **Netlify Forms** once deployed on Netlify:
+via **[Web3Forms](https://web3forms.com)**, which works from any static host (GitHub
+Pages, Netlify, anywhere) since it's just an API call — no server needed on our side:
 
-- `<form name="event-inquiry" data-netlify="true" netlify-honeypot="bot-field">` plus a
-  hidden `form-name` input tell Netlify to detect and process this form at deploy time.
+- A hidden `access_key` input on the `<form>` determines which inbox receives
+  submissions. Get your own free key at web3forms.com (just an email address) and
+  swap the value there to redirect where emails go.
+- `js/main.js` posts the form data to `https://api.web3forms.com/submit` with
+  `fetch()` and shows the existing bilingual success/error message — no page reload.
 - A visually-hidden `bot-field` input (see `.hp-field` in `styles.css`) is a spam
-  honeypot — leave it as-is.
-- `js/main.js` posts the form data to Netlify with `fetch()` and shows the existing
-  bilingual success/error message — no page reload.
-- **Local testing note:** running the site on a plain static server (e.g.
-  `http-server`) has no Netlify backend, so a local submit will show the
-  "something went wrong" error — that's expected. It works once deployed on Netlify.
-- To change where notifications go, or export submissions, use
-  **Site settings → Forms** in the Netlify dashboard after deploying.
+  honeypot, checked client-side before submitting — leave it as-is.
+- **Local testing note:** this works even from a plain static server (e.g.
+  `http-server`), since Web3Forms is a remote API, not tied to any specific host.
+- Submissions currently email whichever address the access key above was
+  registered with. To see/manage them, log into web3forms.com with that address.
 
 ## Brand tokens
 
