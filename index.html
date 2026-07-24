@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Enables JS-only reveal animations; if JS is off, content stays visible -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- ============================================================
+       SEO — TITLE & META
+       Replace canonical / OG URLs with the live domain when hosted.
+       ============================================================ -->
+  <title>D'Party | Atlanta Dessert Catering | Pudding, Cotton Candy & Popcorn for Events</title>
+  <meta name="description" content="D'Party brings creamy pudding, cotton candy and gourmet popcorn to birthdays, weddings, quinceañeras and celebrations across Atlanta. Beautiful dessert tables and party treats catering in Atlanta, GA." />
+  <meta name="keywords" content="Atlanta dessert catering, party treats Atlanta, pudding for events Atlanta, cotton candy Atlanta, popcorn catering Atlanta, quinceañera desserts Atlanta, wedding dessert service Atlanta, dessert table Atlanta" />
+  <meta name="theme-color" content="#6E2733" />
+
+  <!-- CANONICAL PLACEHOLDER — update to your final domain -->
+  <link rel="canonical" href="https://www.dparty-atlanta.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:site_name" content="D'Party" />
+  <meta property="og:title" content="D'Party | Atlanta Dessert Catering for Sweet Celebrations" />
+  <meta property="og:description" content="Creamy pudding, cotton candy and gourmet popcorn with beautiful presentation for birthdays, weddings, baby showers and quinceañeras across the Atlanta area." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:url" content="https://www.dparty-atlanta.com/" />
+  <meta property="og:image" content="https://www.dparty-atlanta.com/assets/logo-badge.png" />
+  <meta property="og:image:alt" content="D'Party pudding and popcorn dessert catering in Atlanta" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="D'Party | Atlanta Dessert Catering for Sweet Celebrations" />
+  <meta name="twitter:description" content="Pudding, cotton candy and gourmet popcorn for birthdays, weddings, quinceañeras and events across Atlanta." />
+  <meta name="twitter:image" content="https://www.dparty-atlanta.com/assets/logo-badge.png" />
+
+  <!-- Fonts: Fraunces (serif display), Hanken Grotesk (body), Parisienne (script accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Parisienne&display=swap" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon — D'Party brand mark -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/logo-mark.png" />
+
+  <!-- ============================================================
+       STRUCTURED DATA — LocalBusiness / FoodEstablishment
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "D'Party",
+    "description": "Dessert and event treats catering serving creamy pudding, cotton candy and gourmet popcorn for celebrations throughout the Atlanta area.",
+    "image": "https://www.dparty-atlanta.com/assets/logo-badge.png",
+    "url": "https://www.dparty-atlanta.com/",
+    "telephone": "+1-678-300-9112",
+    "priceRange": "$$",
+    "servesCuisine": "Desserts",
+    "areaServed": {
+      "@type": "City",
+      "name": "Atlanta",
+      "containedInPlace": { "@type": "State", "name": "Georgia" }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA",
+      "addressCountry": "US"
+    },
+    "sameAs": [ "https://www.instagram.com/mari_pudins_/" ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Creamy Pudding" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Cotton Candy" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Sweet Popcorn" } },
+      { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Salty Popcorn" } }
+    ]
+  }
+  </script>
+
+  <!-- FAQ SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve Atlanta, Georgia and the surrounding metro area, including nearby suburbs. Share your event location and we will confirm availability." } },
+      { "@type": "Question", "name": "How far in advance should I place my order?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend booking at least two to three weeks ahead for most events, and earlier for weddings, quinceañeras and large celebrations. We do our best to accommodate last-minute requests." } },
+      { "@type": "Question", "name": "Do you provide treats for large events?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We cater intimate gatherings and large celebrations alike, scaling pudding cups, cotton candy and popcorn to your guest count." } },
+      { "@type": "Question", "name": "Can I customize colors for my event?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We can match cotton candy and dessert-table styling to your event colors and theme." } },
+      { "@type": "Question", "name": "Do you serve quinceañeras and weddings?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Quinceañeras, weddings, baby showers, corporate, school and church events are all part of what we do." } },
+      { "@type": "Question", "name": "How can I request pricing?", "acceptedAnswer": { "@type": "Answer", "text": "Fill out our event inquiry form or text us at (678) 300-9112 and we will send a personalized quote." } },
+      { "@type": "Question", "name": "¿Hablan español?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, hablamos español. Puede escribirnos por WhatsApp o completar el formulario y con gusto le atendemos en español." } }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<!-- Skip link for keyboard users -->
+<a class="skip-link" href="#main" data-en="Skip to main content" data-es="Saltar al contenido principal" data-pt="Ir para o conteúdo">Skip to main content</a>
+
+<!-- ============================================================
+     LANGUAGE GATE — first thing a new visitor sees
+     Shown once (until a language is chosen); choice is remembered.
+     ============================================================ -->
+<div class="lang-gate" id="langGate" role="dialog" aria-modal="true" aria-labelledby="langGateTitle" hidden>
+  <div class="lang-gate__card">
+    <img class="lang-gate__logo" src="assets/logo-mark.png" alt="D'Party" width="400" height="400" />
+    <p class="lang-gate__tag script">Sweet moments, unforgettable memories</p>
+    <h1 class="lang-gate__title" id="langGateTitle">
+      <span>Choose your language</span>
+      <span>Elige tu idioma</span>
+      <span>Escolha seu idioma</span>
+    </h1>
+    <div class="lang-gate__opts">
+      <button type="button" class="lang-gate__btn" data-lang="en">
+        <span class="lang-gate__flag" aria-hidden="true">
+          <svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#fff"/><g fill="#B22234"><rect width="24" height="1.23"/><rect y="2.46" width="24" height="1.23"/><rect y="4.92" width="24" height="1.23"/><rect y="7.38" width="24" height="1.23"/><rect y="9.85" width="24" height="1.23"/><rect y="12.3" width="24" height="1.23"/><rect y="14.77" width="24" height="1.23"/></g><rect width="10" height="8.6" fill="#3C3B6E"/><circle cx="5" cy="4.3" r="1.3" fill="#fff"/></svg>
+        </span>
+        <span class="lang-gate__name">English</span>
+        <span class="lang-gate__go" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </button>
+      <button type="button" class="lang-gate__btn" data-lang="es">
+        <span class="lang-gate__flag" aria-hidden="true">
+          <svg viewBox="0 0 24 16"><rect width="8" height="16" fill="#006847"/><rect x="8" width="8" height="16" fill="#fff"/><rect x="16" width="8" height="16" fill="#CE1126"/><circle cx="12" cy="8" r="1.7" fill="#9b6b3a"/></svg>
+        </span>
+        <span class="lang-gate__name">Español</span>
+        <span class="lang-gate__go" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </button>
+      <button type="button" class="lang-gate__btn" data-lang="pt">
+        <span class="lang-gate__flag" aria-hidden="true">
+          <svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#009C3B"/><path d="M12 2 22 8 12 14 2 8Z" fill="#FFDF00"/><circle cx="12" cy="8" r="3.2" fill="#002776"/></svg>
+        </span>
+        <span class="lang-gate__name">Português</span>
+        <span class="lang-gate__go" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     1 · STICKY NAVIGATION
+     ============================================================ -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="D'Party — home">
+      <!-- D'Party brand mark (transparent, from assets/dpartylogo3 no background.png) -->
+      <span class="brand__mark">
+        <img src="assets/logo-mark.png" alt="D'Party logo, pudding and popcorn" width="136" height="136" />
+      </span>
+      <span class="brand__type">
+        <span class="brand__name">D&rsquo;Party</span>
+        <span class="brand__tag" data-en="Flavor &amp; quality" data-es="Sabor y calidad" data-pt="Sabor e qualidade">Flavor &amp; quality</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#treats" data-en="Treats" data-es="Dulces" data-pt="Doces">Treats</a>
+      <a href="#events" data-en="Events" data-es="Eventos" data-pt="Eventos">Events</a>
+      <a href="#how" data-en="How It Works" data-es="Cómo Funciona" data-pt="Como Funciona">How It Works</a>
+      <a href="#gallery" data-en="Gallery" data-es="Galería" data-pt="Galeria">Gallery</a>
+      <a href="#faq" data-en="FAQ" data-es="Preguntas" data-pt="Dúvidas">FAQ</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang" role="group" aria-label="Language selector">
+        <button type="button" class="lang__globe" id="langReopen" aria-label="Choose language" data-en-aria="Choose language" data-es-aria="Elegir idioma" data-pt-aria="Escolher idioma">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+        </button>
+        <button type="button" class="lang__btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang__sep" aria-hidden="true">·</span>
+        <button type="button" class="lang__btn" data-lang="es" aria-pressed="false">ES</button>
+        <span class="lang__sep" aria-hidden="true">·</span>
+        <button type="button" class="lang__btn" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <a class="btn btn--primary nav__cta" href="#inquiry" data-en="Request a Quote" data-es="Pedir Cotización" data-pt="Pedir Orçamento">Request a Quote</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile" id="mobileMenu" hidden>
+    <div class="mobile-lang" role="group" aria-label="Language selector">
+      <button type="button" class="lang__btn mobile-lang__btn is-active" data-lang="en" aria-pressed="true">
+        <span class="mobile-lang__flag"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#fff"/><g fill="#B22234"><rect width="24" height="1.23"/><rect y="2.46" width="24" height="1.23"/><rect y="4.92" width="24" height="1.23"/><rect y="7.38" width="24" height="1.23"/><rect y="9.85" width="24" height="1.23"/><rect y="12.3" width="24" height="1.23"/><rect y="14.77" width="24" height="1.23"/></g><rect width="10" height="8.6" fill="#3C3B6E"/><circle cx="5" cy="4.3" r="1.3" fill="#fff"/></svg></span>
+        English
+      </button>
+      <button type="button" class="lang__btn mobile-lang__btn" data-lang="es" aria-pressed="false">
+        <span class="mobile-lang__flag"><svg viewBox="0 0 24 16"><rect width="8" height="16" fill="#006847"/><rect x="8" width="8" height="16" fill="#fff"/><rect x="16" width="8" height="16" fill="#CE1126"/><circle cx="12" cy="8" r="1.7" fill="#9b6b3a"/></svg></span>
+        Español
+      </button>
+      <button type="button" class="lang__btn mobile-lang__btn" data-lang="pt" aria-pressed="false">
+        <span class="mobile-lang__flag"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#009C3B"/><path d="M12 2 22 8 12 14 2 8Z" fill="#FFDF00"/><circle cx="12" cy="8" r="3.2" fill="#002776"/></svg></span>
+        Português
+      </button>
+    </div>
+    <a href="#treats" data-en="Treats" data-es="Dulces" data-pt="Doces">Treats</a>
+    <a href="#events" data-en="Events" data-es="Eventos" data-pt="Eventos">Events</a>
+    <a href="#how" data-en="How It Works" data-es="Cómo Funciona" data-pt="Como Funciona">How It Works</a>
+    <a href="#gallery" data-en="Gallery" data-es="Galería" data-pt="Galeria">Gallery</a>
+    <a href="#about" data-en="About" data-es="Nosotros" data-pt="Sobre">About</a>
+    <a href="#faq" data-en="FAQ" data-es="Preguntas" data-pt="Dúvidas">FAQ</a>
+    <a class="btn btn--primary" href="#inquiry" data-en="Request a Quote" data-es="Pedir Cotización" data-pt="Pedir Orçamento">Request a Quote</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================================================
+     2 · HERO
+     ============================================================ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="petals" aria-hidden="true" data-petals></div>
+
+  <div class="hero__grid">
+    <div class="hero__copy reveal">
+      <p class="script script--lg" data-en="Sweet moments," data-es="Momentos dulces," data-pt="Momentos doces,">Sweet moments,</p>
+      <h1 class="hero__title" id="hero-title" data-en="made unforgettable." data-es="hechos inolvidables." data-pt="que ficam inesquecíveis.">made unforgettable.</h1>
+      <p class="hero__lead"
+        data-en="Delicious treats, beautiful presentation and a touch of sweetness for birthdays, weddings, baby showers, corporate events and special celebrations throughout the Atlanta area."
+        data-es="Dulces deliciosos, una presentación hermosa y un toque de dulzura para cumpleaños, bodas, baby showers, eventos corporativos y celebraciones especiales en toda el área de Atlanta."
+        data-pt="Doces deliciosos, uma apresentação linda e um toque de doçura para aniversários, casamentos, chás de bebê, eventos corporativos e celebrações especiais em toda a região de Atlanta.">Delicious treats, beautiful presentation and a touch of sweetness for birthdays, weddings, baby showers, corporate events and special celebrations throughout the Atlanta area.</p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#treats" data-en="View Our Treats" data-es="Ver Nuestros Dulces" data-pt="Ver Nossos Doces">View Our Treats</a>
+        <a class="btn contact-btn" href="#" data-contact>
+          <span class="contact-btn__ico" aria-hidden="true"></span>
+          <span class="contact-btn__label" data-en="Text Us" data-es="Pedir por WhatsApp" data-pt="Pedir no WhatsApp">Text Us</span>
+        </a>
+      </div>
+
+      <p class="hero__loc">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        <span data-en="Serving Atlanta and surrounding areas." data-es="Servimos Atlanta y sus alrededores." data-pt="Atendemos Atlanta e regiões próximas.">Serving Atlanta and surrounding areas.</span>
+      </p>
+    </div>
+
+    <!-- Hero image arrangement — framed placeholders (replace with product photography) -->
+    <div class="hero__media reveal">
+      <figure class="frame frame--a" role="img" aria-label="Creamy vanilla pudding cups styled on a blush dessert table in Atlanta">
+        <!-- REPLACE: <img src="assets/hero-pudding.jpg" alt="Creamy pudding cups on a blush dessert table" width="520" height="620"> -->
+        <span class="frame__ph" data-ph="Creamy Pudding"></span>
+      </figure>
+      <figure class="frame frame--b" role="img" aria-label="Pastel cotton candy clouds for a celebration">
+        <!-- REPLACE: <img src="assets/hero-cottoncandy.jpg" alt="Pastel cotton candy clouds" loading="lazy" width="360" height="360"> -->
+        <span class="frame__ph" data-ph="Cotton Candy"></span>
+      </figure>
+      <figure class="frame frame--c" role="img" aria-label="Colorful sweet popcorn in a vintage-style cone">
+        <!-- REPLACE: <img src="assets/hero-popcorn.jpg" alt="Colorful sweet popcorn cone" loading="lazy" width="320" height="300"> -->
+        <span class="frame__ph" data-ph="Sweet Popcorn"></span>
+      </figure>
+      <span class="sparkle sparkle--1" aria-hidden="true"></span>
+      <span class="sparkle sparkle--2" aria-hidden="true"></span>
+      <span class="sparkle sparkle--3" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<!-- decorative divider — sweet garland -->
+<div class="rule" aria-hidden="true">
+  <span class="rule__sweets">
+    <!-- cupcake -->
+    <svg viewBox="0 0 32 32"><path d="M9 14.5h14l-1.5 11.2a1.4 1.4 0 0 1-1.4 1.2H11.9a1.4 1.4 0 0 1-1.4-1.2z" fill="#CFEADF"/><path d="M8.3 14.5c0-4.2 3.4-6.8 7.7-6.8s7.7 2.6 7.7 6.8z" fill="#F19BB0"/><circle cx="16" cy="6.4" r="1.8" fill="#C0325a"/></svg>
+    <span class="dot"></span>
+    <!-- wrapped candy -->
+    <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="6.4" fill="#8FC0E0"/><path d="M9.6 16 3.8 12v8zM22.4 16 28.2 12v8z" fill="#F6C7AE"/><circle cx="14.2" cy="14.2" r="1.7" fill="#FFFFFF" opacity=".6"/></svg>
+    <span class="dot"></span>
+    <!-- donut -->
+    <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="8.6" fill="#B79BDD"/><circle cx="16" cy="16" r="3.2" fill="#FBEBEC"/><circle cx="12" cy="12.5" r="1" fill="#EC8AA6"/><circle cx="20.2" cy="13.4" r="1" fill="#F2CE6B"/><circle cx="19.4" cy="20" r="1" fill="#7FC9AD"/><circle cx="11.8" cy="19.6" r="1" fill="#83B9DE"/></svg>
+  </span>
+</div>
+
+<!-- ============================================================
+     3 · FEATURED TREATS
+     ============================================================ -->
+<section class="section" id="treats" aria-labelledby="treats-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-doodle" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M9 14.5h14l-1.5 11.2a1.4 1.4 0 0 1-1.4 1.2H11.9a1.4 1.4 0 0 1-1.4-1.2z" fill="#CFEADF"/><path d="M8.3 14.5c0-4.2 3.4-6.8 7.7-6.8s7.7 2.6 7.7 6.8z" fill="#F19BB0"/><circle cx="16" cy="6.4" r="1.8" fill="#C0325a"/></svg>
+      </span>
+      <p class="script" data-en="A little sweetness" data-es="Un poco de dulzura" data-pt="Um pouco de doçura">A little sweetness</p>
+      <h2 class="sec-title" id="treats-title" data-en="Featured Treats" data-es="Dulces Destacados" data-pt="Doces em Destaque">Featured Treats</h2>
+      <p class="sec-sub"
+        data-en="Small-batch favorites for Atlanta celebrations, each one prepared fresh and styled to match your event."
+        data-es="Favoritos en pequeñas cantidades para celebraciones en Atlanta, cada uno preparado fresco y decorado según tu evento."
+        data-pt="Os queridinhos das festas em Atlanta, feitos em pequenas quantidades, cada um preparado na hora e decorado para combinar com o seu evento.">Small-batch favorites for Atlanta celebrations, each one prepared fresh and styled to match your event.</p>
+    </header>
+
+    <div class="treats">
+      <!-- Creamy Pudding -->
+      <article class="card reveal">
+        <figure class="card__media" role="img" aria-label="Creamy vanilla pudding served in glass cups for an event">
+          <!-- REPLACE: <img src="assets/treat-pudding.jpg" alt="Creamy vanilla pudding in glass cups" loading="lazy" width="600" height="440"> -->
+          <span class="card__ph" data-ph="Creamy Pudding"></span>
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title" data-en="Creamy Pudding" data-es="Pudín Cremoso" data-pt="Pudim Cremoso">Creamy Pudding</h3>
+          <p class="card__text" data-en="Smooth, creamy and made with love." data-es="Suave, cremoso y hecho con amor." data-pt="Suave, cremoso e feito com amor.">Smooth, creamy and made with love.</p>
+          <a class="btn btn--ghost card__cta" href="#inquiry" data-treat="Creamy Pudding" data-en="Request Pricing" data-es="Pedir Precio" data-pt="Pedir Preço">Request Pricing</a>
+        </div>
+      </article>
+
+      <!-- Cotton Candy -->
+      <article class="card reveal">
+        <figure class="card__media" role="img" aria-label="Pastel cotton candy for a magical party in Atlanta">
+          <!-- REPLACE: <img src="assets/treat-cottoncandy.jpg" alt="Pastel cotton candy clouds" loading="lazy" width="600" height="440"> -->
+          <span class="card__ph" data-ph="Cotton Candy"></span>
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title" data-en="Cotton Candy" data-es="Algodón de Azúcar" data-pt="Algodão-Doce">Cotton Candy</h3>
+          <p class="card__text" data-en="Spun fresh at our cotton candy cart, light, fluffy and perfect for magical celebrations." data-es="Hecho al momento en nuestro carrito de algodón de azúcar, ligero, esponjoso y perfecto para celebraciones mágicas." data-pt="Feito na hora no nosso carrinho de algodão-doce, leve, fofinho e perfeito para celebrações mágicas.">Spun fresh at our cotton candy cart, light, fluffy and perfect for magical celebrations.</p>
+          <a class="btn btn--ghost card__cta" href="#inquiry" data-treat="Cotton Candy" data-en="Request Pricing" data-es="Pedir Precio" data-pt="Pedir Preço">Request Pricing</a>
+        </div>
+      </article>
+
+      <!-- Sweet Popcorn -->
+      <article class="card reveal">
+        <figure class="card__media" role="img" aria-label="Colorful sweet popcorn for birthday parties in Atlanta">
+          <!-- REPLACE: <img src="assets/treat-sweetpopcorn.jpg" alt="Colorful sweet popcorn" loading="lazy" width="600" height="440"> -->
+          <span class="card__ph" data-ph="Sweet Popcorn"></span>
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title" data-en="Sweet Popcorn" data-es="Palomitas Dulces" data-pt="Pipoca Doce">Sweet Popcorn</h3>
+          <p class="card__text" data-en="Popped fresh from our popcorn cart, colorful, crispy and full of sweetness." data-es="Hechas al momento en nuestro carrito de palomitas, coloridas, crujientes y llenas de dulzura." data-pt="Estourada na hora no nosso carrinho de pipoca, colorida, crocante e cheia de doçura.">Popped fresh from our popcorn cart, colorful, crispy and full of sweetness.</p>
+          <a class="btn btn--ghost card__cta" href="#inquiry" data-treat="Sweet Popcorn" data-en="Request Pricing" data-es="Pedir Precio" data-pt="Pedir Preço">Request Pricing</a>
+        </div>
+      </article>
+
+      <!-- Salty Popcorn -->
+      <article class="card reveal">
+        <figure class="card__media" role="img" aria-label="Freshly seasoned salty popcorn for events in Atlanta">
+          <!-- REPLACE: <img src="assets/treat-saltypopcorn.jpg" alt="Freshly seasoned salty popcorn" loading="lazy" width="600" height="440"> -->
+          <span class="card__ph" data-ph="Salty Popcorn"></span>
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title" data-en="Salty Popcorn" data-es="Palomitas Saladas" data-pt="Pipoca Salgada">Salty Popcorn</h3>
+          <p class="card__text" data-en="Popped fresh from our popcorn cart, perfectly seasoned and irresistible." data-es="Hechas al momento en nuestro carrito de palomitas, perfectamente sazonadas e irresistibles." data-pt="Estourada na hora no nosso carrinho de pipoca, perfeitamente temperada e irresistível.">Popped fresh from our popcorn cart, perfectly seasoned and irresistible.</p>
+          <a class="btn btn--ghost card__cta" href="#inquiry" data-treat="Salty Popcorn" data-en="Request Pricing" data-es="Pedir Precio" data-pt="Pedir Preço">Request Pricing</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4 · EVENTS WE SERVE
+     ============================================================ -->
+<section class="section section--tint" id="events" aria-labelledby="events-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="bunting" aria-hidden="true">
+        <svg viewBox="0 0 340 34" preserveAspectRatio="xMidYMid meet"><line x1="2" y1="7" x2="338" y2="7" stroke="#C6868C" stroke-width="2" stroke-linecap="round"/><polygon points="6,7 36,7 21,29" fill="#E7708F"/><polygon points="43,7 73,7 58,29" fill="#5FA6D6"/><polygon points="80,7 110,7 95,29" fill="#59BE9B"/><polygon points="117,7 147,7 132,29" fill="#E9BC44"/><polygon points="154,7 184,7 169,29" fill="#A585D6"/><polygon points="191,7 221,7 206,29" fill="#EC9068"/><polygon points="228,7 258,7 243,29" fill="#5FBEBE"/><polygon points="265,7 295,7 280,29" fill="#DE84B8"/><polygon points="302,7 332,7 317,29" fill="#E9BC44"/></svg>
+      </span>
+      <p class="script" data-en="Every occasion" data-es="Cada ocasión" data-pt="Toda ocasião">Every occasion</p>
+      <h2 class="sec-title" id="events-title" data-en="Events We Serve" data-es="Eventos Que Atendemos" data-pt="Eventos Que Atendemos">Events We Serve</h2>
+      <p class="sec-sub"
+        data-en="From an intimate baby shower to a grand quinceañera, we bring the sweet table to your celebration across Atlanta."
+        data-es="Desde un baby shower íntimo hasta una gran quinceañera, llevamos la mesa dulce a tu celebración en Atlanta."
+        data-pt="De um chá de bebê intimista a uma grande quinceañera, levamos a mesa de doces até a sua festa em Atlanta.">From an intimate baby shower to a grand quinceañera, we bring the sweet table to your celebration across Atlanta.</p>
+    </header>
+
+    <ul class="events">
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M5 20v-6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/><path d="M4 15c1.1.8 2.2.8 3.3 0s2.2-.8 3.3 0 2.2.8 3.4 0 2.2-.8 3.3 0"/><path d="M12 8.5V6"/><circle cx="12" cy="4.4" r=".8" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span data-en="Birthday Parties" data-es="Cumpleaños" data-pt="Aniversários">Birthday Parties</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="15" r="4.3"/><circle cx="15" cy="15" r="4.3"/><path d="M12 4.5l1.8 2.7h-3.6z"/></svg>
+        </span>
+        <span data-en="Weddings" data-es="Bodas" data-pt="Casamentos">Weddings</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="9" width="8" height="11" rx="3.2"/><path d="M9.2 9V7.2h5.6V9"/><path d="M11 4.4h2v2.8h-2z"/><path d="M9.5 13.2h5"/></svg>
+        </span>
+        <span data-en="Baby Showers" data-es="Baby Showers" data-pt="Chás de Bebê">Baby Showers</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18.5h16"/><path d="M5 18l-1.3-9 4.3 3.2L12 6l4 6.2 4.3-3.2L19 18"/></svg>
+        </span>
+        <span data-en="Quinceañeras" data-es="Quinceañeras" data-pt="Quinceañeras">Quinceañeras</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="11" rx="2"/><path d="M9 8V6.2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2V8"/><path d="M3.5 13h17"/></svg>
+        </span>
+        <span data-en="Corporate Events" data-es="Eventos Corporativos" data-pt="Eventos Corporativos">Corporate Events</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5 2.5 9 12 13l9.5-4z"/><path d="M6.5 11v4.2c0 1.1 2.6 2.3 5.5 2.3s5.5-1.2 5.5-2.3V11"/><path d="M21.5 9v5"/></svg>
+        </span>
+        <span data-en="School Events" data-es="Eventos Escolares" data-pt="Eventos Escolares">School Events</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3.5M10.3 4.7h3.4"/><path d="M6 20.5V11l6-3.8 6 3.8v9.5"/><path d="M10 20.5v-3.2a2 2 0 0 1 4 0v3.2"/></svg>
+        </span>
+        <span data-en="Church Events" data-es="Eventos de Iglesia" data-pt="Eventos de Igreja">Church Events</span>
+      </li>
+      <li class="event reveal">
+        <span class="event__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 3.5l1 5.2A3 3 0 0 1 7 12M5.5 20.5h5M8 12v8.5"/><path d="M15.5 3.5l-1 5.2A3 3 0 0 0 17 12M18.5 20.5h-5M16 12v8.5"/><path d="M9.2 6h6.6"/></svg>
+        </span>
+        <span data-en="Private Celebrations" data-es="Celebraciones Privadas" data-pt="Celebrações Privadas">Private Celebrations</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     5 · HOW ORDERING WORKS
+     ============================================================ -->
+<section class="section section--tint" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-doodle" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="8.6" fill="#B79BDD"/><circle cx="16" cy="16" r="3.2" fill="#FBEBEC"/><circle cx="12" cy="12.5" r="1" fill="#EC8AA6"/><circle cx="20.2" cy="13.4" r="1" fill="#F2CE6B"/><circle cx="19.4" cy="20" r="1" fill="#7FC9AD"/><circle cx="11.8" cy="19.6" r="1" fill="#83B9DE"/></svg>
+      </span>
+      <p class="script" data-en="Simple &amp; sweet" data-es="Simple y dulce" data-pt="Simples e doce">Simple &amp; sweet</p>
+      <h2 class="sec-title" id="how-title" data-en="How Ordering Works" data-es="Cómo Funciona el Pedido" data-pt="Como Funciona o Pedido">How Ordering Works</h2>
+      <p class="sec-sub"
+        data-en="Three easy steps from first message to a beautifully sweet celebration."
+        data-es="Tres pasos sencillos, desde el primer mensaje hasta una celebración deliciosamente dulce."
+        data-pt="Três passos simples, da primeira mensagem até uma festa lindamente doce.">Three easy steps from first message to a beautifully sweet celebration.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__num">1</span>
+        <h3 data-en="Tell Us About Your Event" data-es="Cuéntanos Sobre Tu Evento" data-pt="Conte Sobre o Seu Evento">Tell Us About Your Event</h3>
+        <p data-en="Send your date, guest count and the treats you love through the form or a quick text." data-es="Envíanos tu fecha, número de invitados y los dulces que te encantan por el formulario o WhatsApp." data-pt="Envie a data, o número de convidados e os doces que você ama pelo formulário ou WhatsApp.">Send your date, guest count and the treats you love through the form or a quick text.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">2</span>
+        <h3 data-en="Get Your Sweet Quote" data-es="Recibe Tu Cotización" data-pt="Receba Seu Orçamento">Get Your Sweet Quote</h3>
+        <p data-en="We reply with pricing, options and ideas styled to match your colors and theme." data-es="Respondemos con precios, opciones e ideas decoradas según tus colores y tema." data-pt="Respondemos com preços, opções e ideias decoradas para combinar com suas cores e tema.">We reply with pricing, options and ideas styled to match your colors and theme.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">3</span>
+        <h3 data-en="We Bring the Sweetness" data-es="Llevamos la Dulzura" data-pt="Levamos a Doçura">We Bring the Sweetness</h3>
+        <p data-en="Confirm your order and we prepare, deliver and set up your treats, ready to enjoy." data-es="Confirma tu pedido y preparamos, entregamos y montamos tus dulces, listos para disfrutar." data-pt="Confirme o pedido e preparamos, entregamos e montamos os doces, prontinhos para aproveitar.">Confirm your order and we prepare, deliver and set up your treats, ready to enjoy.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     7 · INSTAGRAM GALLERY
+     ============================================================ -->
+<section class="section" id="gallery" aria-labelledby="gallery-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="sec-doodle" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><ellipse cx="16" cy="24.5" rx="9.5" ry="2.3" fill="#C29A54" opacity=".4"/><path d="M8.5 15.5h15l-1.4 7.8a2 2 0 0 1-2 1.7h-8.2a2 2 0 0 1-2-1.7z" fill="#F2D9A8"/><ellipse cx="16" cy="15.5" rx="7.5" ry="2.9" fill="#C29A54"/><path d="M12 15c1.5 1.2 6.5 1.2 8 0" fill="none" stroke="#a97f38" stroke-width=".8" opacity=".5"/></svg>
+      </span>
+      <p class="script" data-en="Fresh from our table" data-es="Recién de nuestra mesa" data-pt="Direto da nossa mesa">Fresh from our table</p>
+      <h2 class="sec-title" id="gallery-title" data-en="Instagram Gallery" data-es="Galería de Instagram" data-pt="Galeria do Instagram">Instagram Gallery</h2>
+      <p class="sec-sub">
+        <a class="ig-handle" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener">@mari_pudins_</a>
+        <span data-en=" · follow along for our latest sweet creations." data-es=" · síguenos para ver nuestras últimas creaciones dulces." data-pt=" · siga para ver nossas últimas criações doces."> · follow along for our latest sweet creations.</span>
+      </p>
+    </header>
+
+    <!-- REPLACE each placeholder with a real Instagram photo:
+         <a href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" class="ig">
+           <img src="assets/ig-1.jpg" alt="Descriptive alt text" loading="lazy" width="400" height="400">
+         </a>  -->
+    <div class="gallery">
+      <a class="ig reveal" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" aria-label="View D'Party pudding on Instagram"><span class="ig__ph" data-ph="Pudding"></span><span class="ig__hover" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 3.05A6.75 6.75 0 1 0 18.75 12 6.75 6.75 0 0 0 12 5.25zm0 11.13A4.38 4.38 0 1 1 16.38 12 4.38 4.38 0 0 1 12 16.38zm6.99-11.4a1.58 1.58 0 1 1-1.58-1.58 1.58 1.58 0 0 1 1.58 1.58z"/></svg></span></a>
+      <a class="ig reveal" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" aria-label="View D'Party cotton candy on Instagram"><span class="ig__ph" data-ph="Cotton Candy"></span><span class="ig__hover" aria-hidden="true">↗</span></a>
+      <a class="ig reveal" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" aria-label="View D'Party dessert table on Instagram"><span class="ig__ph" data-ph="Dessert Table"></span><span class="ig__hover" aria-hidden="true">↗</span></a>
+      <a class="ig reveal" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" aria-label="View D'Party popcorn cones on Instagram"><span class="ig__ph" data-ph="Popcorn"></span><span class="ig__hover" aria-hidden="true">↗</span></a>
+      <a class="ig reveal" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" aria-label="View D'Party quinceañera setup on Instagram"><span class="ig__ph" data-ph="Quinceañera"></span><span class="ig__hover" aria-hidden="true">↗</span></a>
+      <a class="ig reveal" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" aria-label="View D'Party wedding treats on Instagram"><span class="ig__ph" data-ph="Wedding"></span><span class="ig__hover" aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="gallery__cta">
+      <a class="btn btn--ghost" href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener" data-en="Follow @mari_pudins_" data-es="Sigue a @mari_pudins_" data-pt="Seguir @mari_pudins_">Follow @mari_pudins_</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8 · ABOUT
+     ============================================================ -->
+<section class="section section--about" id="about" aria-labelledby="about-title">
+  <div class="wrap about">
+    <figure class="about__media reveal" role="img" aria-label="Mari of D'Party preparing handmade pudding for an Atlanta celebration">
+      <!-- REPLACE: <img src="assets/about-mari.jpg" alt="Mari of D'Party preparing handmade treats" loading="lazy" width="560" height="640"> -->
+      <span class="about__ph" data-ph="About D'Party"></span>
+      <span class="about__ribbon script" data-en="Made with love" data-es="Hecho con amor" data-pt="Feito com amor">Made with love</span>
+    </figure>
+    <div class="about__copy reveal">
+      <p class="script" data-en="Our story" data-es="Nuestra historia" data-pt="Nossa história">Our story</p>
+      <h2 class="sec-title sec-title--left" id="about-title" data-en="About D&rsquo;Party" data-es="Sobre D&rsquo;Party" data-pt="Sobre a D&rsquo;Party">About D&rsquo;Party</h2>
+      <p
+        data-en="D&rsquo;Party began with a simple belief: the sweetest moments deserve treats made with heart. What started as homemade pudding for family gatherings has grown into a beloved dessert service for celebrations all across the Atlanta area."
+        data-es="D&rsquo;Party nació de una idea sencilla: los momentos más dulces merecen postres hechos con el corazón. Lo que comenzó como pudín casero para reuniones familiares se convirtió en un querido servicio de postres para celebraciones en toda el área de Atlanta."
+        data-pt="A D&rsquo;Party nasceu de uma ideia simples: os momentos mais doces merecem doces feitos com o coração. O que começou como pudim caseiro para reuniões de família virou um querido serviço de doces para festas em toda a região de Atlanta.">D&rsquo;Party began with a simple belief: the sweetest moments deserve treats made with heart. What started as homemade pudding for family gatherings has grown into a beloved dessert service for celebrations all across the Atlanta area.</p>
+      <p
+        data-en="We proudly serve both our American and Hispanic neighbors with the same warmth, blending classic flavors, careful presentation and a personal touch that makes every event feel special."
+        data-es="Servimos con orgullo a nuestros vecinos, tanto americanos como hispanos, con la misma calidez, combinando sabores clásicos, una presentación cuidadosa y un toque personal que hace que cada evento se sienta especial."
+        data-pt="Atendemos com orgulho nossos vizinhos americanos e hispânicos com o mesmo carinho, unindo sabores clássicos, uma apresentação caprichada e um toque pessoal que faz cada evento ser especial.">We proudly serve both our American and Hispanic neighbors with the same warmth, blending classic flavors, careful presentation and a personal touch that makes every event feel special.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9 · EVENT INQUIRY FORM
+     ============================================================ -->
+<section class="section" id="inquiry" aria-labelledby="inq-title">
+  <div class="wrap inquiry">
+    <div class="inquiry__intro reveal">
+      <p class="script" data-en="Let&rsquo;s plan something sweet" data-es="Planeemos algo dulce" data-pt="Vamos planejar algo doce">Let&rsquo;s plan something sweet</p>
+      <h2 class="sec-title sec-title--left" id="inq-title" data-en="Event Inquiry" data-es="Solicitud de Evento" data-pt="Solicitação de Evento">Event Inquiry</h2>
+      <p class="sec-sub sec-sub--left"
+        data-en="Tell us a little about your celebration and we&rsquo;ll send a personalized quote. Prefer to chat? Just text us."
+        data-es="Cuéntanos un poco sobre tu celebración y te enviaremos una cotización personalizada. ¿Prefieres platicar? Escríbenos por WhatsApp."
+        data-pt="Conte um pouco sobre a sua festa e enviaremos um orçamento personalizado. Prefere conversar? Fale com a gente no WhatsApp.">Tell us a little about your celebration and we&rsquo;ll send a personalized quote. Prefer to chat? Message us on WhatsApp.</p>
+      <a class="btn contact-btn" href="#" data-contact>
+        <span class="contact-btn__ico" aria-hidden="true"></span>
+        <span class="contact-btn__label" data-en="Text Us" data-es="Chatea por WhatsApp" data-pt="Falar no WhatsApp">Text Us</span>
+      </a>
+    </div>
+
+    <!-- FORM
+         Wired to Netlify Forms — deploying this folder to Netlify is enough
+         to start receiving submissions in Site settings → Forms. No server
+         or extra signup needed. See README.md for details. -->
+    <form class="form reveal" id="inquiryForm" name="event-inquiry" method="POST"
+          data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="event-inquiry" />
+      <p class="hp-field" aria-hidden="true">
+        <label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="f-name" data-en="Name" data-es="Nombre" data-pt="Nome">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required
+                 data-en-ph="Your full name" data-es-ph="Tu nombre completo" data-pt-ph="Seu nome completo" placeholder="Your full name" />
+          <small class="err" data-err></small>
+        </div>
+        <div class="field">
+          <label for="f-phone" data-en="Phone" data-es="Teléfono" data-pt="Telefone">Phone</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" required
+                 data-en-ph="(678) 000-0000" data-es-ph="(678) 000-0000" data-pt-ph="(678) 000-0000" placeholder="(678) 000-0000" />
+          <small class="err" data-err></small>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="f-email" data-en="Email" data-es="Correo" data-pt="E-mail">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required
+                 data-en-ph="you@email.com" data-es-ph="tu@correo.com" data-pt-ph="voce@email.com" placeholder="you@email.com" />
+          <small class="err" data-err></small>
+        </div>
+        <div class="field">
+          <label for="f-date" data-en="Event Date" data-es="Fecha del Evento" data-pt="Data do Evento">Event Date</label>
+          <input id="f-date" name="event_date" type="date" required />
+          <small class="err" data-err></small>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="f-type" data-en="Event Type" data-es="Tipo de Evento" data-pt="Tipo de Evento">Event Type</label>
+          <select id="f-type" name="event_type" required>
+            <option value="" data-en="Select an event type" data-es="Selecciona un tipo de evento" data-pt="Selecione o tipo de evento">Select an event type</option>
+            <option value="Birthday" data-en="Birthday Party" data-es="Cumpleaños" data-pt="Aniversário">Birthday Party</option>
+            <option value="Wedding" data-en="Wedding" data-es="Boda" data-pt="Casamento">Wedding</option>
+            <option value="Baby Shower" data-en="Baby Shower" data-es="Baby Shower" data-pt="Chá de Bebê">Baby Shower</option>
+            <option value="Quinceañera" data-en="Quinceañera" data-es="Quinceañera" data-pt="Quinceañera">Quinceañera</option>
+            <option value="Corporate" data-en="Corporate Event" data-es="Evento Corporativo" data-pt="Evento Corporativo">Corporate Event</option>
+            <option value="School" data-en="School Event" data-es="Evento Escolar" data-pt="Evento Escolar">School Event</option>
+            <option value="Church" data-en="Church Event" data-es="Evento de Iglesia" data-pt="Evento de Igreja">Church Event</option>
+            <option value="Other" data-en="Other Celebration" data-es="Otra Celebración" data-pt="Outra Celebração">Other Celebration</option>
+          </select>
+          <small class="err" data-err></small>
+        </div>
+        <div class="field">
+          <label for="f-location" data-en="Event Location" data-es="Lugar del Evento" data-pt="Local do Evento">Event Location</label>
+          <input id="f-location" name="event_location" type="text" autocomplete="address-level2"
+                 data-en-ph="City / venue in the Atlanta area" data-es-ph="Ciudad / lugar en el área de Atlanta" data-pt-ph="Cidade / local na região de Atlanta" placeholder="City / venue in the Atlanta area" />
+          <small class="err" data-err></small>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="f-guests" data-en="Number of Guests" data-es="Número de Invitados" data-pt="Número de Convidados">Number of Guests</label>
+          <input id="f-guests" name="guests" type="number" min="1" inputmode="numeric"
+                 data-en-ph="e.g. 50" data-es-ph="ej. 50" data-pt-ph="ex. 50" placeholder="e.g. 50" />
+          <small class="err" data-err></small>
+        </div>
+        <div class="field">
+          <label for="f-lang" data-en="Preferred Language" data-es="Idioma Preferido" data-pt="Idioma Preferido">Preferred Language</label>
+          <select id="f-lang" name="preferred_language">
+            <option value="English" data-en="English" data-es="Inglés" data-pt="Inglês">English</option>
+            <option value="Spanish" data-en="Spanish" data-es="Español" data-pt="Espanhol">Spanish</option>
+            <option value="Portuguese" data-en="Portuguese" data-es="Portugués" data-pt="Português">Portuguese</option>
+          </select>
+          <small class="err" data-err></small>
+        </div>
+      </div>
+
+      <!-- Treats interested in -->
+      <fieldset class="field field--full treats-pick">
+        <legend data-en="Treats You&rsquo;re Interested In" data-es="Dulces Que Te Interesan" data-pt="Doces do Seu Interesse">Treats You&rsquo;re Interested In</legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="treats" value="Creamy Pudding" /><span data-en="Creamy Pudding" data-es="Pudín Cremoso" data-pt="Pudim Cremoso">Creamy Pudding</span></label>
+          <label class="chip"><input type="checkbox" name="treats" value="Cotton Candy" /><span data-en="Cotton Candy" data-es="Algodón de Azúcar" data-pt="Algodão-Doce">Cotton Candy</span></label>
+          <label class="chip"><input type="checkbox" name="treats" value="Sweet Popcorn" /><span data-en="Sweet Popcorn" data-es="Palomitas Dulces" data-pt="Pipoca Doce">Sweet Popcorn</span></label>
+          <label class="chip"><input type="checkbox" name="treats" value="Salty Popcorn" /><span data-en="Salty Popcorn" data-es="Palomitas Saladas" data-pt="Pipoca Salgada">Salty Popcorn</span></label>
+        </div>
+      </fieldset>
+
+      <div class="field field--full">
+        <label for="f-details" data-en="Additional Details" data-es="Detalles Adicionales" data-pt="Detalhes Adicionais">Additional Details</label>
+        <textarea id="f-details" name="details" rows="4"
+                  data-en-ph="Tell us your colors, theme, or anything special…" data-es-ph="Cuéntanos tus colores, tema o algo especial…" data-pt-ph="Conte suas cores, tema ou algo especial…" placeholder="Tell us your colors, theme, or anything special…"></textarea>
+      </div>
+
+      <div class="form__submit">
+        <button class="btn btn--primary btn--lg" type="submit" data-en="Request a Sweet Quote" data-es="Pedir una Cotización Dulce" data-pt="Pedir um Orçamento Doce">Request a Sweet Quote</button>
+        <p class="form__note" data-en="We usually reply within 24 hours." data-es="Normalmente respondemos en 24 horas." data-pt="Normalmente respondemos em até 24 horas.">We usually reply within 24 hours.</p>
+      </div>
+
+      <!-- success / error region -->
+      <p class="form__msg" id="formMsg" role="status" aria-live="polite" hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     11 · FINAL CTA
+     ============================================================ -->
+<section class="finalcta" aria-labelledby="final-title">
+  <!-- festive decoration layer -->
+  <div class="finalcta__decor" aria-hidden="true">
+    <span class="finalcta__bunting">
+      <svg viewBox="0 0 340 34" preserveAspectRatio="xMidYMid meet"><line x1="2" y1="7" x2="338" y2="7" stroke="#F5DBDF" stroke-width="2" stroke-linecap="round"/><polygon points="6,7 36,7 21,29" fill="#E7708F"/><polygon points="43,7 73,7 58,29" fill="#5FA6D6"/><polygon points="80,7 110,7 95,29" fill="#59BE9B"/><polygon points="117,7 147,7 132,29" fill="#E9BC44"/><polygon points="154,7 184,7 169,29" fill="#A585D6"/><polygon points="191,7 221,7 206,29" fill="#EC9068"/><polygon points="228,7 258,7 243,29" fill="#5FBEBE"/><polygon points="265,7 295,7 280,29" fill="#DE84B8"/><polygon points="302,7 332,7 317,29" fill="#E9BC44"/></svg>
+    </span>
+    <span class="fc-sweet fc-sweet--1"><svg viewBox="0 0 32 32"><path d="M9 14.5h14l-1.5 11.2a1.4 1.4 0 0 1-1.4 1.2H11.9a1.4 1.4 0 0 1-1.4-1.2z" fill="#CFEADF"/><path d="M8.3 14.5c0-4.2 3.4-6.8 7.7-6.8s7.7 2.6 7.7 6.8z" fill="#F19BB0"/><circle cx="16" cy="6.4" r="1.8" fill="#C0325a"/></svg></span>
+    <span class="fc-sweet fc-sweet--2"><svg viewBox="0 0 32 32"><rect x="15" y="15" width="2" height="13" rx="1" fill="#7FC9AD"/><circle cx="16" cy="11" r="7" fill="#FBD8E2"/><path d="M16 4.2a6.8 6.8 0 0 1 0 13.6 3.4 3.4 0 0 1 0-6.8 1.4 1.4 0 0 1 0 2.8" fill="none" stroke="#EC8AA6" stroke-width="1.7"/></svg></span>
+    <span class="fc-sweet fc-sweet--3"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="8.6" fill="#B79BDD"/><circle cx="16" cy="16" r="3.2" fill="#FBEBEC"/><circle cx="12" cy="12.5" r="1" fill="#EC8AA6"/><circle cx="20.2" cy="13.4" r="1" fill="#F2CE6B"/><circle cx="19.4" cy="20" r="1" fill="#7FC9AD"/><circle cx="11.8" cy="19.6" r="1" fill="#83B9DE"/></svg></span>
+    <span class="fc-sweet fc-sweet--4"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="6.4" fill="#8FC0E0"/><path d="M9.6 16 3.8 12v8zM22.4 16 28.2 12v8z" fill="#F6C7AE"/><circle cx="14.2" cy="14.2" r="1.7" fill="#FFFFFF" opacity=".6"/></svg></span>
+    <span class="fc-sweet fc-sweet--5"><svg viewBox="0 0 32 32"><ellipse cx="16" cy="24.5" rx="9.5" ry="2.3" fill="#C29A54" opacity=".4"/><path d="M8.5 15.5h15l-1.4 7.8a2 2 0 0 1-2 1.7h-8.2a2 2 0 0 1-2-1.7z" fill="#F2D9A8"/><ellipse cx="16" cy="15.5" rx="7.5" ry="2.9" fill="#C29A54"/></svg></span>
+  </div>
+
+  <div class="finalcta__inner reveal">
+    <span class="sparkle sparkle--s1" aria-hidden="true"></span>
+    <span class="sparkle sparkle--s2" aria-hidden="true"></span>
+    <p class="script script--lg" data-en="Ready to celebrate?" data-es="¿Lista para celebrar?" data-pt="Pronta para celebrar?">Ready to celebrate?</p>
+    <h2 class="finalcta__title" id="final-title" data-en="Let&rsquo;s make your event unforgettably sweet." data-es="Hagamos tu evento inolvidablemente dulce." data-pt="Vamos deixar o seu evento inesquecivelmente doce.">Let&rsquo;s make your event unforgettably sweet.</h2>
+    <p class="finalcta__sub"
+      data-en="Serving Atlanta and surrounding areas. Reach out today and let&rsquo;s plan your dessert table."
+      data-es="Servimos Atlanta y sus alrededores. Escríbenos hoy y planeemos tu mesa de postres."
+      data-pt="Atendemos Atlanta e regiões próximas. Fale com a gente hoje e vamos planejar sua mesa de doces.">Serving Atlanta and surrounding areas. Reach out today and let&rsquo;s plan your dessert table.</p>
+    <div class="finalcta__cta">
+      <a class="btn btn--primary btn--lg" href="#inquiry" data-en="Request a Sweet Quote" data-es="Pedir una Cotización Dulce" data-pt="Pedir um Orçamento Doce">Request a Sweet Quote</a>
+      <a class="btn contact-btn contact-btn--onDark" href="#" data-contact>
+        <span class="contact-btn__ico" aria-hidden="true"></span>
+        <span class="contact-btn__label" data-en="Text Us" data-es="Pedir por WhatsApp" data-pt="Pedir no WhatsApp">Text Us</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     12 · FOOTER
+     ============================================================ -->
+<footer class="footer" id="contact">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <span class="footer__logo">
+        <img src="assets/logo-mark.png" alt="D'Party logo" width="60" height="60" loading="lazy" />
+        <span class="brand__name brand__name--lg">D&rsquo;Party</span>
+      </span>
+      <p class="script footer__tag" data-en="Sweet moments, unforgettable memories." data-es="Momentos dulces, recuerdos inolvidables." data-pt="Momentos doces, memórias inesquecíveis.">Sweet moments, unforgettable memories.</p>
+      <p class="footer__desc" data-en="Dessert &amp; event treats catering serving Atlanta, Georgia and surrounding areas." data-es="Repostería y dulces para eventos en Atlanta, Georgia y sus alrededores." data-pt="Doces e sobremesas para eventos em Atlanta, Geórgia e regiões próximas.">Dessert &amp; event treats catering serving Atlanta, Georgia and surrounding areas.</p>
+    </div>
+
+    <nav class="footer__col" aria-label="Footer">
+      <h3 data-en="Explore" data-es="Explorar" data-pt="Explorar">Explore</h3>
+      <a href="#treats" data-en="Featured Treats" data-es="Dulces Destacados" data-pt="Doces em Destaque">Featured Treats</a>
+      <a href="#events" data-en="Events We Serve" data-es="Eventos Que Atendemos" data-pt="Eventos Que Atendemos">Events We Serve</a>
+      <a href="#how" data-en="How It Works" data-es="Cómo Funciona" data-pt="Como Funciona">How It Works</a>
+      <a href="#faq" data-en="FAQ" data-es="Preguntas Frecuentes" data-pt="Perguntas Frequentes">FAQ</a>
+      <a href="#inquiry" data-en="Request a Quote" data-es="Pedir Cotización" data-pt="Pedir Orçamento">Request a Quote</a>
+    </nav>
+
+    <div class="footer__col">
+      <h3 data-en="Get in Touch" data-es="Contáctanos" data-pt="Fale Conosco">Get in Touch</h3>
+      <a class="contact-link" href="#" data-contact data-en="Text: (678) 300-9112" data-es="WhatsApp: (678) 300-9112" data-pt="WhatsApp: (678) 300-9112">Text: (678) 300-9112</a>
+      <a href="https://www.instagram.com/mari_pudins_/" target="_blank" rel="noopener">Instagram: @mari_pudins_</a>
+      <!-- SERVICE AREA — edit to list specific cities/neighborhoods you serve -->
+      <p class="footer__area" data-en="Service area: Atlanta, GA &amp; surrounding metro (Marietta, Decatur, Sandy Springs, Alpharetta and more)." data-es="Área de servicio: Atlanta, GA y el área metropolitana (Marietta, Decatur, Sandy Springs, Alpharetta y más)." data-pt="Área de atendimento: Atlanta, GA e região metropolitana (Marietta, Decatur, Sandy Springs, Alpharetta e mais).">Service area: Atlanta, GA &amp; surrounding metro (Marietta, Decatur, Sandy Springs, Alpharetta and more).</p>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    <p>&copy; <span id="year">2026</span> D&rsquo;Party. <span data-en="All rights reserved." data-es="Todos los derechos reservados." data-pt="Todos os direitos reservados.">All rights reserved.</span></p>
+    <p class="footer__made" data-en="Handmade treats · Atlanta, Georgia" data-es="Dulces artesanales · Atlanta, Georgia" data-pt="Doces artesanais · Atlanta, Geórgia">Handmade treats · Atlanta, Georgia</p>
+  </div>
+</footer>
+
+<!-- FAQ (visually placed near footer; content also powers FAQ schema above) -->
+<section class="section section--faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap wrap--narrow">
+    <header class="sec-head reveal">
+      <span class="sec-doodle" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><rect x="15" y="15" width="2" height="13" rx="1" fill="#7FC9AD"/><circle cx="16" cy="11" r="7" fill="#FBD8E2"/><path d="M16 4.2a6.8 6.8 0 0 1 0 13.6 3.4 3.4 0 0 1 0-6.8 1.4 1.4 0 0 1 0 2.8" fill="none" stroke="#EC8AA6" stroke-width="1.7"/></svg>
+      </span>
+      <p class="script" data-en="Good to know" data-es="Bueno saber" data-pt="Bom saber">Good to know</p>
+      <h2 class="sec-title" id="faq-title" data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes" data-pt="Perguntas Frequentes">Frequently Asked Questions</h2>
+    </header>
+
+    <div class="faq">
+      <details class="faq__item reveal">
+        <summary data-en="What areas do you serve?" data-es="¿Qué áreas atienden?" data-pt="Quais regiões vocês atendem?">What areas do you serve?</summary>
+        <p data-en="We serve Atlanta, Georgia and the surrounding metro area, including nearby suburbs. Share your event location and we&rsquo;ll confirm availability." data-es="Servimos Atlanta, Georgia y el área metropolitana, incluyendo los suburbios cercanos. Comparte la ubicación de tu evento y confirmamos disponibilidad." data-pt="Atendemos Atlanta, Geórgia e toda a região metropolitana, incluindo cidades próximas. Informe o local do seu evento e confirmamos a disponibilidade.">We serve Atlanta, Georgia and the surrounding metro area, including nearby suburbs. Share your event location and we&rsquo;ll confirm availability.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary data-en="How far in advance should I place my order?" data-es="¿Con cuánta anticipación debo hacer mi pedido?" data-pt="Com quanta antecedência devo fazer o pedido?">How far in advance should I place my order?</summary>
+        <p data-en="We recommend booking at least two to three weeks ahead for most events, and earlier for weddings, quinceañeras and large celebrations. We&rsquo;ll always try to accommodate last-minute requests." data-es="Recomendamos reservar al menos dos o tres semanas antes para la mayoría de los eventos, y con más tiempo para bodas, quinceañeras y celebraciones grandes. Siempre intentamos atender solicitudes de último minuto." data-pt="Recomendamos reservar com pelo menos duas a três semanas de antecedência para a maioria dos eventos, e com mais tempo para casamentos, quinceañeras e festas grandes. Sempre tentamos atender pedidos de última hora.">We recommend booking at least two to three weeks ahead for most events, and earlier for weddings, quinceañeras and large celebrations. We&rsquo;ll always try to accommodate last-minute requests.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary data-en="Do you provide treats for large events?" data-es="¿Ofrecen dulces para eventos grandes?" data-pt="Vocês atendem eventos grandes?">Do you provide treats for large events?</summary>
+        <p data-en="Yes. We cater intimate gatherings and large celebrations alike, scaling pudding cups, cotton candy and popcorn to your guest count." data-es="Sí. Atendemos reuniones íntimas y grandes celebraciones por igual, adaptando los vasitos de pudín, el algodón de azúcar y las palomitas a tu número de invitados." data-pt="Sim. Atendemos desde reuniões intimistas até grandes festas, ajustando os potinhos de pudim, o algodão-doce e a pipoca ao número de convidados.">Yes. We cater intimate gatherings and large celebrations alike, scaling pudding cups, cotton candy and popcorn to your guest count.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary data-en="Can I customize colors for my event?" data-es="¿Puedo personalizar los colores para mi evento?" data-pt="Posso personalizar as cores do meu evento?">Can I customize colors for my event?</summary>
+        <p data-en="Absolutely. We can match cotton candy and dessert-table styling to your event colors and theme." data-es="¡Por supuesto! Podemos combinar el algodón de azúcar y el estilo de la mesa de postres con los colores y el tema de tu evento." data-pt="Com certeza! Combinamos o algodão-doce e a decoração da mesa de doces com as cores e o tema do seu evento.">Absolutely. We can match cotton candy and dessert-table styling to your event colors and theme.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary data-en="Do you serve quinceañeras and weddings?" data-es="¿Atienden quinceañeras y bodas?" data-pt="Vocês atendem quinceañeras e casamentos?">Do you serve quinceañeras and weddings?</summary>
+        <p data-en="Yes. Quinceañeras, weddings, baby showers, corporate, school and church events are all part of what we do." data-es="Sí. Quinceañeras, bodas, baby showers, eventos corporativos, escolares y de iglesia son parte de lo que hacemos." data-pt="Sim. Quinceañeras, casamentos, chás de bebê, eventos corporativos, escolares e de igreja fazem parte do que fazemos.">Yes. Quinceañeras, weddings, baby showers, corporate, school and church events are all part of what we do.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary data-en="How can I request pricing?" data-es="¿Cómo puedo pedir precios?" data-pt="Como peço um orçamento?">How can I request pricing?</summary>
+        <p data-en="Fill out our event inquiry form or text us at (678) 300-9112 and we&rsquo;ll send a personalized quote." data-es="Completa nuestro formulario de solicitud o escríbenos por WhatsApp al (678) 300-9112 y te enviaremos una cotización personalizada." data-pt="Preencha o formulário de solicitação ou fale com a gente no WhatsApp (678) 300-9112 e enviamos um orçamento personalizado.">Fill out our event inquiry form or text us at (678) 300-9112 and we&rsquo;ll send a personalized quote.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary data-en="Do you speak Spanish?" data-es="¿Hablan español?" data-pt="Vocês falam português?">Do you speak Spanish?</summary>
+        <p data-en="Yes, we speak Spanish and Portuguese. Text us or fill out the form and we&rsquo;ll gladly assist you." data-es="Sí, hablamos español y portugués. Escríbenos por WhatsApp o completa el formulario y con gusto le atendemos." data-pt="Sim, falamos português, espanhol e inglês. Fale com a gente no WhatsApp ou preencha o formulário e teremos prazer em atender você.">Yes, we speak Spanish and Portuguese. Text us or fill out the form and we&rsquo;ll gladly assist you.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING CONTACT BUTTON (SMS in English · WhatsApp in ES/PT) -->
+<a class="contact-float" href="#" data-contact
+   aria-label="Text Us" data-en-aria="Text Us" data-es-aria="Pedir por WhatsApp" data-pt-aria="Pedir no WhatsApp">
+  <span class="contact-float__ico" aria-hidden="true"></span>
+  <span class="contact-float__pulse" aria-hidden="true"></span>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

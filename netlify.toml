@@ -1,0 +1,19 @@
+## D'Party — Netlify configuration
+## Static site, no build step: Netlify just serves these files as-is.
+
+[build]
+  publish = "."
+
+# Basic security headers (safe defaults for a static marketing site)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache images/fonts aggressively; HTML/CSS/JS stay revalidated on each deploy
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
