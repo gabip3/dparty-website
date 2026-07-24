@@ -11,3 +11,6 @@ Thumbs.db
 
 # Local Netlify folder
 .netlify
+
+# Flagged: watermarked/screenshotted source image, not cleared for use — never commit
+assets/_originals/pudim1.png
